@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>hack uci slides</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/hackuci.css">
+
+		<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+		<script
+		src="http://code.jquery.com/jquery-3.3.1.min.js"
+		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+		crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.12/jquery.transit.min.js"></script>
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-transition="none" data-background-color="#000000">
+					<div class="countdown center">
+						<span id="clock"></span>
+						<div class="bar"></div>
+					</div>
+				</section>
+				<section id="title" data-transition="fade" data-transition-speed="slow" data-state="title-state">
+					<div id="logo">
+						<img src="./anteater.svg" alt="" class="anteater fragment" data-fragment-index="5">
+						<img src="./anteater-cog.svg" alt="" class="cogs fragment" data-fragment-index="4">
+					</div>
+					<h1 class="title fragment" id="hackuci-title" data-fragment-index="6">HACK<span>UCI</span></h1>
+					<div class="side-flex">
+						<p class="fragment" data-fragment-index="1">CREATE.</p>
+						<p class="fragment" data-fragment-index="2">CONNECT.</p>
+						<p class="fragment" data-fragment-index="3">INSPIRE.</p>	
+					</div>
+				</section>
+				<section data-transition="fade" data-transition-speed="slow">
+					<h1>Opening Ceremonies 🎉</h1>
+					<h2>with Heran Patel 🔥</h2>
+				</section>
+
+				<section data-transition="fade" data-transition-speed="slow">
+						<h1>Directors 👨🏾‍💻</h1>
+						
+						<h2 class="fragment">Jeremy</h2>
+						<h2 class="fragment">Anuj</h2>
+						<h2 class="fragment">Wesley</h2>
+						<h2 class="fragment">Madhav</h2>
+
+						<div class="line">
+						</div>
+
+						<h2 class="fragment">👶🏽</h2>
+						<h2 class="fragment">Kamesh</h2>
+						<h2 class="fragment">Sean</h2>
+						<h2 class="fragment">Tedrick</h2>
+
+				</section>
+
+				<section data-transition="fade" data-transition-speed="slow">
+						<h1>Madhav ✌🏾</h1>
+				</section>
+
+				<section data-transition="fade" data-transition-speed="slow">
+						<h1>Wifi</h1>
+						<h2>HACKUCI</h2>
+						<h2>Goanteaters!</h2>
+				</section>
+
+				<section data-transition="fade" data-transition-speed="slow">
+						<a href="http://hackuci.com/live" target="_blank"><h1>Schedule 🗓</h1></a>
+				</section>
+
+
+				<section data-transition="fade" data-transition-speed="slow">
+						<h1>Marios Papaefthymiou</h1>
+						<h2>Dean | School of Information and Computer Sciences</h2>
+				</section>
+
+				<section data-transition="fade" data-transition-speed="slow">
+						<h1>Kareo</h1>
+						<h2>Russell Anthony</h2>
+				</section>
+
+				<section data-transition="fade" data-transition-speed="slow">
+						<h1>Pariveda Solutions</h1>
+						<h2>Albert Cassanova</h2>
+				</section>
+
+				<section data-transition="fade" data-transition-speed="slow">
+						<h1>SendGrid</h1>
+						<h2>Anthony Wang & Dustin Guerrero</h2>
+				</section>
+
+				<section data-transition="fade" data-transition-speed="slow">
+						<h1>GIGABYTE</h1>
+						<h2>Henry Hong</h2>
+				</section>
+
+				<section data-transition="fade" data-transition-speed="slow">
+						<h1>Templarbit</h1>
+						<h2>Matthias Kadenbach & Bjoern Zinssmeister</h2>
+				</section>	
+
+				<section data-transition="fade" data-transition-speed="slow">
+						<h1>Toshiba</h1>
+						<h2>Milong Sabandith & Jeff Wong</h2>
+				</section>	
+
+				<section data-transition="fade" data-transition-speed="slow">
+						<h1>Other Prizes 🎁</h1>
+						<h2>.tech domain</h2>
+						<h2>best overall prize</h2>
+						<h2>best entrepreneurial hack</h2>
+				</section>
+
+				<section data-transition="fade" data-transition-speed="slow">
+						<h1>Talk to us! 📣</h1>
+						<h2>hackuci.com/live</h2>
+						<h2>Slack</h2>
+						<h2>Mentors</h2>
+						<h2>Devpost</h2>
+						<h2>#hackuci/#hackuci2018</h2>
+				</section>
+
+				<section data-transition="fade" data-transition-speed="slow">
+						<h1>Hacking Ends In ⏰</h1>
+						<h2 id="closes"></h2>
+						<br>
+						<h2>Need a team? Come to the lobby</h2>
+						<h3>Happy Hacking!</h3>
+				</section>
+			</div>
+		</div>
+
+
+		<script src="js/reveal.js"></script>
+		<script src="js/jquery.countdown.min.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				mouseWheel: true,
+				center: true,
+			});
+
+			$("#closes").countdown("2018/02/04 10:00", function(event) {
+				var format = "%-I hour%!H %-M minute%!M %-S second%!S"
+				$(this).html(event.strftime(format));
+			});
+
+			// "2018/02/02 21:00:00"
+			$('#clock').countdown("2018/02/02 21:00:00", function(event) {
+				var format = '';
+				if(event.offset.totalHours > 0) {
+					format += '<span class="strong">%-H</span> hour%!H '
+				}
+
+				if(event.offset.totalMinutes > 0) {
+					format += '<span class="strong">%-M</span> minute%!M '
+				}
+
+				if(event.offset.totalSeconds > 0) {
+					format += '<span class="strong">%-S</span> second%!S '
+				}
+
+				if(event.offset.totalSeconds <= 10) {
+					format = '<span class="strong">%-S</span>'
+				}
+
+  				$(this).html(event.strftime(format));
+			}).on('finish.countdown', function() {
+
+
+
+				$(".bar").transition({
+					width: "0%"
+				}, function() {
+				$("#clock").transition({
+					opacity: 0,
+					duration: 500,
+					delay: 500
+				}, function() {
+				Reveal.right();
+				})
+				})
+			});
+
+			var done = false;
+
+			Reveal.addEventListener('title-state', function() {
+				if(!done) {
+					setTimeout(Reveal.right, 1000);
+					setTimeout(Reveal.right, 2000);
+					setTimeout(Reveal.right, 3000);
+					setTimeout(Reveal.right, 4000);
+					setTimeout(Reveal.right, 5000);	
+					setTimeout(Reveal.right, 6000);	
+					setTimeout(Reveal.right, 16000);
+				}
+					
+				done = true;
+			});
+		</script>
+	</body>
+</html>
